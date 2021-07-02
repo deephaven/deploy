@@ -22,7 +22,7 @@ resource "google_compute_instance" "vm_instance_public" {
       image = data.google_compute_image.deephaven-image.self_link
     }
   }
-
+  #Labels to avoid alerts in cloudbakers can be removed later
   metadata = {
     authorization = "103900000016063005"
   }
