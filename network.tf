@@ -21,7 +21,7 @@ resource "google_compute_firewall" "allow-internal" {
   network = google_compute_network.vpc.name
   allow {
     protocol = "tcp"
-    ports    = ["1000"]
+    ports    = ["10000"]
   }
   source_ranges = [
     "${var.public_subnet_cidr_1}"
