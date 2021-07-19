@@ -10,6 +10,7 @@
 ```
 
     To set the zone property in the compute section, run:
+    
 ```
         gcloud config set compute/zone us-central1-a
 ```
@@ -30,8 +31,9 @@ gcloud beta compute --project=$PROJECT_ID instances create deephaven --zone=us-c
 
 #3. Login to the vm which we created, use below command to login to vm
 
+```
 gcloud beta compute ssh --zone "us-central1-a" "deephaven" --project "$PROJECT_ID"
-
+```
 
 #4. Once you login to vm copy and paste below commands and hit enter on the server.
 This will install the required packages and then clone the  deephaven git repo and start the application.
