@@ -1,7 +1,6 @@
 # Application Definition
 app_name        = "deephaven" #do NOT enter any spaces
 app_environment = "test"      # Dev, Test, Prod, etc
-# app_domain      = "kopicloud.com"
 app_project = "himantej-development-test"
 
 # GCP Settings
