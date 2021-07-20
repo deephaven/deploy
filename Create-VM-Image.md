@@ -3,7 +3,7 @@
 This repo consists of instructions about how any user can run the deephaven application.
 
 
-#Create Image steps
+# Create Image steps
 
 # Login to GCP console and Click to cloud shell where we will run all the commands
 
