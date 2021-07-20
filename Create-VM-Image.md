@@ -13,7 +13,7 @@ This repo consists of instructions about how any user can run the deephaven appl
         gcloud config set project YOUR_PROJECT_NAME
 ```
 
-    To set the zone property in the compute section, run:
+   To set the zone property in the compute section, run:
 
 ```
         gcloud config set compute/zone us-central1-a
