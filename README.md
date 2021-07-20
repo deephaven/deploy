@@ -1,19 +1,19 @@
 #  Running Deephaven the application in GCP on VM
 
-This document is about the instruction which will give information how to run deephaven application using GCP VM.
+This document is about the instructions which will give information on how to run Deephaven application using GCP VM.
 
 Prerequisites:
 
-The user should be having a valid GCP account.
+The user should have a valid GCP account.
 
-Need to have gcloud and terraform install on the your the google cloud shell else you can install using links below.
+Need to have gcloud and terraform installed in your google cloud shell else you can install using links below.
 
 gcloud can be installed by following this document as per the OS --> https://cloud.google.com/sdk/docs/install
 
 Terraform can be installed from here as per the OS --> https://releases.hashicorp.com/terraform/0.14.6/
 
 
-#1. Login to GCP console and Click to cloud shell where we will run all the commands
+# Login to GCP console and Click to cloud shell where we will run all the commands
 
    To set the project property in the core section, run Replace YOUR_PROJECT_NAME value:
 
@@ -21,13 +21,13 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
         gcloud config set project YOUR_PROJECT_NAME
 ```
 
-    To set the zone property in the compute section, run:
+  # To set the zone property in the compute section, run:
 
 ```
         gcloud config set compute/zone us-central1-a
 ```
 
-#Setup up project name and zone as environment variable so can be used in future commands:
+# Setup up project name and zone as environment variable so it can be used in future commands:
 
 ```
 export PROJECT_ID="YOUR_PROJECT_NAME"
@@ -79,10 +79,10 @@ export ZONE="us-central1-a"
     cd deploy
 ```
 
-This repo consists of terraform code along with deephaven code which can be used to run the deephaven application.
+This repo consists of terraform code along with deephaven code which can be used to run the Deephaven application.
 
 
-5) Once repo is downloaded Open to the terraform.tfvars file and change the app_project and gcp_auth_file
+5) Once repo is downloaded Open the terraform.tfvars file and change the app_project and gcp_auth_file
 
    Replace the following values:
 
@@ -91,8 +91,7 @@ This repo consists of terraform code along with deephaven code which can be used
                   Example: /home/username/private-key.json
 
 
-6) Now we need to run three terraform command which will create a new VM and it will have the Deephaven
-   application installed.
+6) Now we need to run three terraform commands which will create a new VM and it will have the Deephaven application installed.
    Run the below terraform commands in your cloud shell:
 
  ```
@@ -102,7 +101,7 @@ This repo consists of terraform code along with deephaven code which can be used
  ```
 
 
-If you get any errors as terraform command not found see the Prerequisites.
+# If you get any errors as terraform like command not found. Please follow the Prerequisites.
 
 
  7) Once the terraform apply is successful it will print an external IP on your screen.

@@ -70,7 +70,7 @@ echo “all done”
 exit 1
 ```
 
-Once all the steps are completed and the deephaven process starts running. You can see the output on your screen as below snapshot:
+# Once all the steps are completed and the deephaven process starts running. You can see the output on your screen as below snapshot:
 
 <img width="628" alt="Output" src="https://user-images.githubusercontent.com/80594801/125849884-3671ecf0-4747-4ea7-a4b6-5cad42b33997.png">
 
