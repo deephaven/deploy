@@ -13,7 +13,7 @@ gcloud can be installed by following this document as per the OS --> https://clo
 Terraform can be installed from here as per the OS --> https://releases.hashicorp.com/terraform/0.14.6/
 
 
-# Login to GCP console and Click to cloud shell where we will run all the commands
+# Login to GCP console and click to cloud shell where we will run all the commands
 
    To set the project property in the core section, run Replace YOUR_PROJECT_NAME value:
 
