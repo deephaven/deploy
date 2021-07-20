@@ -5,7 +5,7 @@ This repo consists of instructions about how any user can run the deephaven appl
 
 #Create Image steps
 
-#1. Login to GCP console and Click to cloud shell where we will run all the commands
+# Login to GCP console and Click to cloud shell where we will run all the commands
 
    To set the project property in the core section, run:
 
@@ -19,14 +19,14 @@ This repo consists of instructions about how any user can run the deephaven appl
         gcloud config set compute/zone us-central1-a
 ```
 
-#Setup up project name and zone as environment variable as well
+# Setup up project name and zone as environment variable as well
 
 ```
 export PROJECT_ID="YOUR_PROJECT_NAME"
 export ZONE="us-central1-a"
 ```
 
-#2. Run below command in the cloud shell which will create a GCP vm
+# Run below command in the cloud shell which will create a GCP vm
 
 You need to replace the PROJECT_ID and PROJECT_NUMBER in the below command:
 
@@ -35,13 +35,13 @@ gcloud beta compute --project=$PROJECT_ID instances create deephaven --zone=us-c
 ```
 
 
-#3. Login to the vm which we created, use below command to login to vm
+# Login to the vm which we created, use below command to login to vm
 
 ```
 gcloud beta compute ssh --zone "us-central1-a" "deephaven" --project "$PROJECT_ID"
 ```
 
-#4. Once you login to vm copy and paste below commands and hit enter on the server.
+# Once you login to vm copy and paste below commands and hit enter on the server.
 
 This will install the required packages and then clone the  deephaven git repo and start the application.
 
