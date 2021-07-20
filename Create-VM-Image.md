@@ -5,7 +5,7 @@ This repo consists of instructions about how any user can run the deephaven appl
 
 # Create Image steps
 
-# Login to GCP console and Click to cloud shell where we will run all the commands
+# Login to GCP console and Click to cloud shell where we will run all the commands:
 
    To set the project property in the core section, run:
 
