@@ -24,14 +24,14 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
 # To set the zone property in the compute section, run:
 
 ```
-        gcloud config set compute/zone us-central1-a
+         gcloud config set compute/zone us-central1-a
 ```
 
 # Setup up project name and zone as environment variable so it can be used in future commands:
 
 ```
-export PROJECT_ID="YOUR_PROJECT_NAME"
-export ZONE="us-central1-a"
+         export PROJECT_ID="YOUR_PROJECT_NAME"
+         export ZONE="us-central1-a"
 ```
 
 
@@ -39,7 +39,7 @@ export ZONE="us-central1-a"
    To create the service account, run the gcloud iam service-accounts create command:
 
     ```
-    gcloud iam service-accounts create terraform-service-account \
+          gcloud iam service-accounts create terraform-service-account \
         --description="terraform-service-account" \
         --display-name="terraform-service-account"
     ```
@@ -47,9 +47,9 @@ export ZONE="us-central1-a"
 2) To grant your service account an IAM role on your project, run the gcloud projects add-iam-policy-binding command:
 
 ```
-    gcloud projects add-iam-policy-binding PROJECT_ID \
-    --member="SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com" \
-    --role="roles/editor"
+          gcloud projects add-iam-policy-binding PROJECT_ID \
+          --member="SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com" \
+          --role="roles/editor"
 ```
 
     Replace the following values:
@@ -62,8 +62,8 @@ export ZONE="us-central1-a"
 3) Download the service account key in json format which need to be used by the terraform using the command below:
 
 ```
-    gcloud iam service-accounts keys create private-key.json \
-    --iam-account="SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com"
+         gcloud iam service-accounts keys create private-key.json \
+         --iam-account="SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com"
 ```
 
     Replace the following values:
@@ -75,8 +75,8 @@ export ZONE="us-central1-a"
 4) Clone the latest deephaven git repo in your cloud shell using command below:
 
 ```
-    git clone https://github.com/deephaven/deploy.git
-    cd deploy
+        git clone https://github.com/deephaven/deploy.git
+        cd deploy
 ```
 
 This repo consists of terraform code along with deephaven code which can be used to run the Deephaven application.
@@ -99,12 +99,9 @@ This repo consists of terraform code along with deephaven code which can be used
  terraform plan
  terraform apply -auto-approve
  ```
+ If you get any errors in terraform like command not found. Please follow the Prerequisites.
 
-
-# If you get any errors as terraform like command not found. Please follow the Prerequisites.
-
-
- 7) Once the terraform apply is successful it will print an external IP on your screen.
+7) Once the terraform apply is successful it will print an external IP on your screen.
     Copy the IP and paste in the browser url as below to access Deephaven IDE application.
 
     http://EXTERNAL-IP/10000/ide
