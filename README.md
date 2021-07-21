@@ -1,4 +1,4 @@
-#  Running Deephaven the application in GCP on VM
+#  Running Deephaven application in GCP on VM
 
 This document is about the instructions which will give information on how to run Deephaven application using GCP VM.
 
@@ -21,7 +21,7 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
         gcloud config set project YOUR_PROJECT_NAME
 ```
 
-  # To set the zone property in the compute section, run:
+# To set the zone property in the compute section, run:
 
 ```
         gcloud config set compute/zone us-central1-a
