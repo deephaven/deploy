@@ -95,9 +95,9 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
    Run the below terraform commands in your cloud shell:
 
  ```
- terraform init
- terraform plan
- terraform apply -auto-approve
+      terraform init
+      terraform plan
+      terraform apply -auto-approve
  ```
  If you get any errors in terraform like command not found. Please follow the Prerequisites.
 
