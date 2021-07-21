@@ -52,11 +52,11 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
           --role="roles/editor"
 ```
 
-    Replace the following values:
+    **Replace the following values:
     
     PROJECT_ID: The project id.
     SERVICE_ACCOUNT_ID: The service account ID which we created in earlier command (terraform-service-account).
-    ROLE_NAME: A role name, such as roles/editor which will suffice all requirements.
+    ROLE_NAME: A role name, such as roles/editor which will suffice all requirements.**
 
 
 3) Download the service account key in json format which need to be used by the terraform using the command below:
@@ -66,11 +66,11 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
          --iam-account="SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com"
 ```
 
-    Replace the following values:
+   ** Replace the following values:
 
     PROJECT_ID: The project id.
     SERVICE_ACCOUNT_ID: The service account ID which we created in earlier command (terraform-service-account).
-    ROLE_NAME: A role name, such as roles/editor which will suffice all requirements.
+    ROLE_NAME: A role name, such as roles/editor which will suffice all requirements.**
 
 4) Clone the latest deephaven git repo in your cloud shell using command below:
 
@@ -79,7 +79,7 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
         cd deploy
 ```
 
-This repo consists of terraform code along with deephaven code which can be used to run the Deephaven application.
+   This repo consists of terraform code along with deephaven code which can be used to run the Deephaven application.
 
 
 5) Once repo is downloaded Open the terraform.tfvars file and change the app_project and gcp_auth_file
