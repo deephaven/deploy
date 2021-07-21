@@ -53,7 +53,7 @@ Terraform can be installed from here as per the OS --> https://releases.hashicor
 ```
 
     Replace the following values:
-
+    
     PROJECT_ID: The project id.
     SERVICE_ACCOUNT_ID: The service account ID which we created in earlier command (terraform-service-account).
     ROLE_NAME: A role name, such as roles/editor which will suffice all requirements.
